@@ -23,7 +23,7 @@ f.close()
 
 # 转换成json文件并写入
 fw = open(output_file, "w", encoding='utf-8')
-# 
+# 为保证中文的正常输出ensure_ascii应为False， 保证可读性则设置缩进为4
 json_data = json.dumps(data, ensure_ascii=False, indent=4)
 fw.write(json_data)
 fw.close()
