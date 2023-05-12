@@ -18,7 +18,6 @@ data = []
 with open(path, 'r', encoding='utf-8') as f:
     for row in csv.DictReader(f):
         data.append(row)
-f.close()
 
 
 # 转换成json文件并写入
